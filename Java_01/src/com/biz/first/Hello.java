@@ -15,5 +15,6 @@ public class Hello {
 		System.out.println(40.0/30.0);
 		System.out.println(40/30.0);
 		
+		
 	}
 }
