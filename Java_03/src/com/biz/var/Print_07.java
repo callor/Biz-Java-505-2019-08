@@ -15,14 +15,14 @@ public class Print_07 {
 		 * 3. 자동 줄바꿈이 되지 않으므로 문자열 끝에는 \n을 넣어준다
 		 */
 		int num = 3;
-		System.out.printf("%d x %d = %03d\n", num, 2, num*2);
-		System.out.printf("%d x %d = %03d\n", num, 3, num*3);
-		System.out.printf("%d x %d = %03d\n", num, 4, num*4);
-		System.out.printf("%d x %d = %03d\n", num, 5, num*5);
-		System.out.printf("%d x %d = %03d\n", num, 6, num*6);
-		System.out.printf("%d x %d = %03d\n", num, 7, num*7);
-		System.out.printf("%d x %d = %03d\n", num, 8, num*8);
-		System.out.printf("%d x %d = %03d\n", num, 9, num*9);
+		System.out.printf("%d x %d = %3d\n", num, 2, num*2);
+		System.out.printf("%d x %d = %3d\n", num, 3, num*3);
+		System.out.printf("%d x %d = %3d\n", num, 4, num*4);
+		System.out.printf("%d x %d = %3d\n", num, 5, num*5);
+		System.out.printf("%d x %d = %3d\n", num, 6, num*6);
+		System.out.printf("%d x %d = %3d\n", num, 7, num*7);
+		System.out.printf("%d x %d = %3d\n", num, 8, num*8);
+		System.out.printf("%d x %d = %3d\n", num, 9, num*9);
 		
 	}
 }
