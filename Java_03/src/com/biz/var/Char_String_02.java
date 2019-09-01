@@ -10,7 +10,7 @@ public class Char_String_02 {
 		
 		System.out.println(c1 + 0);
 		
-		//한글 문자 Uni Code 보
+		//한글 문자 Uni Code 보기
 		System.out.println(c2 + 0);
 
 		// 문자 + 문자열 => 문자열로 변환 출력
@@ -24,7 +24,7 @@ public class Char_String_02 {
 		System.out.println(c1 + c2 + s3);
 		
 		// 영문자와 한글문자를 덧셈 연산하면
-		// 유니코드로 값이 나타 난
+		// 유니코드로 값이 나타 난다
 		System.out.println(c1 + c2);
 		
 		
