@@ -8,7 +8,7 @@ public class MethodEx_03 {
 
 		MethodProtoType mt = new MethodProtoType();
 		
-		/*
+		/*re
 		 * mt 클래스에는 view() 메서드가 있을텐데
 		 * 아마도
 		 * public void view() {   } 형식 일 것이다. 
