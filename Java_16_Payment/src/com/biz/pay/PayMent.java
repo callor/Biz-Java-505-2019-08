@@ -1,4 +1,4 @@
-package com.biz.string.exec;
+package com.biz.pay;
 
 /*
  * 화폐매수 계산
@@ -66,8 +66,6 @@ public class PayMent {
 		count = (int)(pay / mo);
 		System.out.println(mo + "원권:" + count);
 		pay = pay - count * mo;
-
-		
 		
 		
 	}
