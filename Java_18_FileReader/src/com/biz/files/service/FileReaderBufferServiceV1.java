@@ -3,6 +3,7 @@ package com.biz.files.service;
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
+import java.io.IOException;
 
 /*
  * FileReader만으로 text 파일을 읽기를 하면
@@ -27,13 +28,21 @@ public class FileReaderBufferServiceV1 {
 	FileReader fileReader;
 	BufferedReader buffer;
 	
-	public void read(String fileName) throws FileNotFoundException {
+	public void read(String fileName) throws IOException {
 		
+		// fileReader 객체에 담긴 파일읽기 정보를
+		// bufferedReader에게 주입하면
+		// fileReader와 buffer사이에서
+		// 이미 파일내용을 읽어서
+		// 메모리 어딘가에 안전하게 보관하고 있을 것이다.
 		fileReader = new FileReader(fileName);
 		buffer = new BufferedReader(fileReader);
 		
+		// buffer에서 한줄(~~~~\n)씩 읽기 위해서
+		// readLine() 메서드를 사용한다.
+		String reader = buffer.readLine();
+		
 	}
-	
 	
 
 }
