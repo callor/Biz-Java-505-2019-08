@@ -1,9 +1,9 @@
 package com.biz.files;
 
 import com.biz.files.service.NameService;
-import com.biz.files.service.NameServiceV1;
+import com.biz.files.service.NameServiceV2;
 
-public class NameEx_01 {
+public class NameEx_02 {
 
 	public static void main(String[] args) {
 		/*
@@ -24,11 +24,14 @@ public class NameEx_01 {
 		 * 4. Service 클래스를 작성하여 과제를 수행하시오
 		 */
 		
+		System.out.printf("시작 : %d\n",
+				System.currentTimeMillis());
+		
 		String nameFile = "src/com/biz/files/이름리스트.txt";
 		String famFile = "src/com/biz/files/성씨리스트.txt";
 		String korNameFile = "src/com/biz/files/한국인이름들.txt";
 		
-		NameService ns = new NameServiceV1();
+		NameService ns = new NameServiceV2();
 		
 		
 		try {
