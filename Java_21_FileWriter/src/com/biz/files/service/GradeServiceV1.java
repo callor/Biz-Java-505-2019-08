@@ -7,7 +7,7 @@ import java.util.Random;
 
 import com.biz.files.domain.ScoreVO;
 
-public class GradeServiceV1 {
+public class GradeServiceV1 implements GradeService {
 
 	protected List<ScoreVO> scList = null;
 	
@@ -60,6 +60,18 @@ public class GradeServiceV1 {
 		
 		}
 		fileOut.close();
+	}
+
+	@Override
+	public void readNameFile(String nameFile) throws Exception {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void makeStudentFile(String StudentFile, int length) throws Exception {
+		// TODO Auto-generated method stub
+		
 	}
 	
 }
