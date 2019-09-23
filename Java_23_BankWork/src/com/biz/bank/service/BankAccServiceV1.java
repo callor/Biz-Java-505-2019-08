@@ -1,8 +1,8 @@
-package com.callor.bank.service;
+package com.biz.bank.service;
 
 import java.util.Scanner;
 
-import com.callor.bank.domain.BankAccVO;
+import com.biz.bank.domain.BankAccVO;
 
 /*
  * 1개의 계좌에 대한 처리를 수행할 클래스

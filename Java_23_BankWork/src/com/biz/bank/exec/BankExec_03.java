@@ -1,8 +1,8 @@
-package com.callor.bank.exec;
+package com.biz.bank.exec;
 
 import java.util.Scanner;
 
-import com.callor.bank.service.BankServiceV2;
+import com.biz.bank.service.BankServiceV2;
 
 public class BankExec_03 {
 

@@ -1,4 +1,4 @@
-package com.callor.bank.service;
+package com.biz.bank.service;
 
 import java.io.FileNotFoundException;
 import java.io.PrintWriter;
@@ -9,7 +9,7 @@ import java.util.Scanner;
 import java.util.Set;
 import java.util.TreeMap;
 
-import com.callor.bank.domain.BankAccVO;
+import com.biz.bank.domain.BankAccVO;
 
 /*
  * 여러개 계좌에 대한 입출금 처리

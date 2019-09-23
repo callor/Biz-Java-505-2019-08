@@ -1,4 +1,4 @@
-package com.callor.bank.service;
+package com.biz.bank.service;
 
 /*
  * 은행계정계 app Service

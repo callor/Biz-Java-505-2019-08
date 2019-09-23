@@ -1,4 +1,4 @@
-package com.callor.bank.exec;
+package com.biz.bank.exec;
 
 import java.util.Scanner;
 

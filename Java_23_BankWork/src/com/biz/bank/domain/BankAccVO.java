@@ -1,4 +1,4 @@
-package com.callor.bank.domain;
+package com.biz.bank.domain;
 
 /*
  * 은행 계좌정보를 담을 class
