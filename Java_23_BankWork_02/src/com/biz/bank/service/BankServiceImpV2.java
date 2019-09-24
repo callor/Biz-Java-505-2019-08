@@ -1,0 +1,36 @@
+package com.biz.bank.service;
+
+public class BankServiceImpV2 extends BankServiceImpV1 {
+
+	
+	/*
+	 * 1. 앞에서 조회된 계좌번호가 유효하지 않으면 method 종료
+	 * 		bookVO가 null 이면 계좌번호가 유효하지 않다.
+	 * 2. 키보드로 출금액을 입력받고
+	 * 3. 음수이면 출금 거부!!
+	 * 		입력받은 값 < 0 이면 거부
+	 * 4. 잔액 >= 출금 이면 출금 처리
+	 * 5. 	아니면 출금 거부
+	 */
+	@Override
+	public void output() {
+		// TODO 출금처리
+		if(bookVO == null ) return;
+		
+		System.out.print("출금액>> ");
+		String strOutput = scanner.nextLine();
+		int intOutput = Integer.valueOf(strOutput);
+		if(intOutput < 0) {
+			System.out.println("출금액은 0 이상이어야 함!!");
+			return;
+		}
+		// 출금액 > 잔액 ?
+		if(bookVO.getBalance() < intOutput) {
+			System.out.println("잔액부족!!");
+			return;
+		}
+		bookVO.setBalance(bookVO.getBalance() - intOutput);
+
+	}
+	
+}
