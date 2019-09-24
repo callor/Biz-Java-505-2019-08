@@ -1,5 +1,8 @@
 package com.biz.bank.service;
 
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+
 public class BankServiceImpV2 extends BankServiceImpV1 {
 
 	
@@ -13,7 +16,7 @@ public class BankServiceImpV2 extends BankServiceImpV1 {
 	 * 5. 	아니면 출금 거부
 	 */
 	@Override
-	public void output() {
+	public void output()  throws Exception{
 		// TODO 출금처리
 		if(bookVO == null ) return;
 		
@@ -30,6 +33,19 @@ public class BankServiceImpV2 extends BankServiceImpV1 {
 			return;
 		}
 		bookVO.setBalance(bookVO.getBalance() - intOutput);
+		
+		// 거래일자, 구분 설정
+		// java 1.8에서 새롭게 등장한 날짜 클래스
+		// Date 클래스에서 발생한 날짜 관련 여러가지 이슈가
+		// 상당부분 해소된 새로운 클래스
+		LocalDate localDate = LocalDate.now();
+		DateTimeFormatter df 
+				= DateTimeFormatter.ofPattern("yyyy-MM-dd");
+		String lastDate = localDate.format(df);
+		bookVO.setLastDate(lastDate);
+		bookVO.setRemark("출금");
+		
+		this.bookWrite(bookFile);
 
 	}
 	

@@ -10,6 +10,7 @@ package com.biz.bank.service;
  * 3. 다시 잔고원장에 입, 출금 내역을 반영
  * 
  * 4. 각 계좌별로 입,출금 내역(List)를 파일로 저장
+ * 
  */
 /*
  * interface는 method의 정의만 있고
@@ -31,13 +32,16 @@ public interface BankService {
 	
 	// 조회된 계좌번호에 해당하는 계좌에
 	// 키보드로 부터 입금액을 입력받아서 입금 처리하는 method
-	public void input();
+	public void input() throws Exception;
 	
 	// 출금처리 method
-	public void output();
+	public void output() throws Exception;
 
 	// 입,출금이 완료되었을때 원장 정보를 업데이트 하는 method
-	public void bookWrite(String bookFile) ;
+	public void bookWrite(String bookFile) throws Exception;
+	
+	// 각 계좌별로 입출금 내역을 파일에 저장하자
+	public void accListWrite(String remark, int money) throws Exception ;
 	
 }
 

@@ -51,7 +51,14 @@ public class bankEx_02 {
 				} else if(intMenu == 2) {
 					bs.viewAcc();
 				} else if(intMenu == 3) {
+					
+					// 입금처리 후에 원장저장을 수행하도록 해도 되지만
+					// 코드를 작성하는 중에 원장저장 method 호출을
+					// 빼먹을 수 있기 때문에 input() method에서
+					// bookWriter() method를 호출하도록 코드를 작성
 					bs.input();
+					// bs.bookWrite(bookFile);
+					
 				} else if(intMenu == 4) {
 					bs.output();
 				}
@@ -59,6 +66,7 @@ public class bankEx_02 {
 
 		} catch (Exception e) {
 			// TODO: handle exception
+			e.printStackTrace();
 		}
 		
 	}
