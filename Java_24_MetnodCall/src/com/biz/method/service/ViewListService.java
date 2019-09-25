@@ -20,6 +20,7 @@ public class ViewListService {
 			System.out.println(i);
 		}
 		return nSize;
+		
 	
 	}
 }
