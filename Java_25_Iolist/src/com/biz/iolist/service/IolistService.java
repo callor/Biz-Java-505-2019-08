@@ -31,17 +31,14 @@ public class IolistService {
 		for(String pro : proList) {
 			
 			String[] pros = pro.split(":");
-			// pros[0] 상품명
-			// pros[1] 단가
+			// pros[0] 상품명, pros[1] 단가
 			
 			BuyVO  bVO = new BuyVO();
 			bVO.setProName(pros[0]);
 			bVO.setPrice(Integer.valueOf(pros[1]));
 
-			// 계산식을 사용해서
-			// 부가세 별도 단가 계산,
-			// 부가세 계산
-			// 총액
+			// 계산식을 사용해서 부가세 별도 단가 계산,
+			// 부가세 계산 총액 계산
 			int intPrice = 0; // 부가세 별도 단가 생성
 			int intVat = intPrice - bVO.getPrice();
 			int intQty = 0; // 난수로 수량 생성
