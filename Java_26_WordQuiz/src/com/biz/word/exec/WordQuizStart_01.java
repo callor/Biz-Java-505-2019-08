@@ -32,9 +32,14 @@ public class WordQuizStart_01 {
 				wq.viewEngWord();
 				wq.quizExec();
 				
+				// 개선할 부분
+				if( ((WordQuizServiceV2)wq).nCount < 0) break;
+				
+				/*
 				System.out.println("아무키나 누르세요...종료(-0) ");
 				String strKey = scan.nextLine();
 				if(strKey.equals("-0")) break;
+				*/
 				
 			}
 			System.out.println("GAME OVER!!");

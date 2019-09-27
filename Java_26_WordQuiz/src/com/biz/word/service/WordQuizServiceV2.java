@@ -13,7 +13,7 @@ public class WordQuizServiceV2 extends WordQuizServiceV1 {
 	// wordVO를 현재클래스의 모든 method가 볼수 있다.
 	// == 값을 읽을 수 있다 
 	WordVO wordVO;
-	int nCount ;
+	public int nCount ;
 	
 	public WordQuizServiceV2() {
 		
@@ -98,8 +98,13 @@ public class WordQuizServiceV2 extends WordQuizServiceV1 {
 		
 		Scanner scan = new Scanner(System.in);
 		System.out.println("----------------------");
-		System.out.print("단어입력 힌트(H) >> ");
+		System.out.print("단어입력, 힌트(H), 종료(-0) >> ");
 		String strEngWord = scan.nextLine();
+		
+		if(strEngWord.equals("-0")) {
+			nCount = -1;
+			return;
+		}
 		
 		if(strEngWord.equals("H")) {
 			System.out.println("-------------------------");
