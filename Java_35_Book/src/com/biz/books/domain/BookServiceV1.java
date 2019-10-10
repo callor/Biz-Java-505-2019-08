@@ -15,6 +15,12 @@ public class BookServiceV1 {
 	
 	public void readBookInfo(String bookFile) {
 		
+		String s = "1000  ";
+		s = s.trim(); // 앞뒤 빈칸 제거
+		int p = Integer.valueOf(s);
+		
+		
+		
 	}
 
 }
