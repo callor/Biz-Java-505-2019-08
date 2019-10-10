@@ -17,10 +17,20 @@ public class BookVO {
 	private String b_isbn;
 	private String b_title;
 	private String b_writer;
+	private String b_comp;
 	private String b_trans;
 	private int b_price;
 	private int b_page;
 	private String b_date;
+	
+	
+	
+	public String getB_comp() {
+		return b_comp;
+	}
+	public void setB_comp(String b_comp) {
+		this.b_comp = b_comp;
+	}
 	public String getB_isbn() {
 		return b_isbn;
 	}
